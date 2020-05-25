@@ -16,7 +16,7 @@ deploy:
    app: "Docker"
    env: "Docker-env"
    bucket_name: "elasticbeanstalk-ap-south-1-671141137976"
-   bucket_path: "Docker"
+   bucket_path: "elasticbeanstalk-ap-south-1-671141137976/resources/_runtime/_embedded_extensions/Docker"
    on:
      branch : master
 
