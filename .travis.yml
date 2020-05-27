@@ -11,15 +11,15 @@ script:
     - docker run -e CI=true  docker-react npm run test
 
 deploy:
+   skip_cleanup: true
    provider: elasticbeanstalk
    region: "ap-south-1"
    app: "Docker"
-   env: "Docker-env"
+   env: "Docker-env-1"
    bucket_name: "elasticbeanstalk-ap-south-1-671141137976"
    bucket_path: "Docker"
    on:
-     branch : master
-   skip_cleanup: true 
+     branch : master 
    access_key_id: $AWS_ACCESS_KEY
    secret_access_key: $AWS_SECRET_KEY
 
